@@ -240,7 +240,7 @@ app.post('/api/shows', function (req, res, next) {
     .toLowerCase()
     .replace(/ /g, '_')
     .replace(/[^\w-]+/g, '');
-  var apiKey = '9EF1D1E7D28FDA0B';
+  var apiKey = '3D787DCAD4FF4E90';
   var parser = xml2js.Parser({
     explicitArray: false,
     normalizeTags: true
