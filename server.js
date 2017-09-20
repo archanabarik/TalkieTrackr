@@ -149,7 +149,7 @@ app.post('/auth/facebook', function(req, res, next) {
   var encodedSignature = signedRequest.split('.')[0];
   var payload = signedRequest.split('.')[1];
 
-  var appSecret = '298fb6c080fda239b809ae418bf49700';
+  var appSecret = 'db691acaa9e3446c3f5bf2d19f1844bd';
 
   var expectedSignature = crypto.createHmac('sha256', appSecret).update(payload).digest('base64');
   expectedSignature = expectedSignature.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
