@@ -13,7 +13,7 @@ var async = require('async');
 var request = require('request');
 var xml2js = require('xml2js');
 
-var agenda = require('agenda')({ db: { address: 'localhost:27017/test' } });
+var agenda = require('agenda')({ db: { address: 'mongodb://talkie:trackr@ds143774.mlab.com:43774/talkie-trackr'  } });
 var Sugar = require('sugar/date');
 var nodemailer = require('nodemailer');
 var _ = require('lodash');
@@ -82,7 +82,7 @@ userSchema.methods.comparePassword = function(candidatePassword, cb) {
 var User = mongoose.model('User', userSchema);
 var Show = mongoose.model('Show', showSchema);
 
-mongoose.connect('localhost');
+mongoose.connect('mongodb://talkie:trackr@ds143774.mlab.com:43774/talkie-trackr' );
 
 var app = express();
 
