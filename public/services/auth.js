@@ -9,9 +9,9 @@ angular.module('MyApp')
     // Asynchronously initialize Facebook SDK
     $window.fbAsyncInit = function() {
       FB.init({
-        appId: '624059410963642',
+        appId: '861159527386919',
         responseType: 'token',
-        version: 'v2.0'
+        version: 'v2.10'
       });
     };
 
@@ -63,7 +63,7 @@ angular.module('MyApp')
       },
       googleLogin: function() {
         gapi.auth.authorize({
-          client_id: '55262601920-5jhf3qth89okujq6a7lh8bqc9epr8475.apps.googleusercontent.com',
+          client_id: '1000141209838-qk2e7dsdmtb2nktcnqeeos2vbasfsgmh.apps.googleusercontent.com',
           scope: 'https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/plus.profile.emails.read',
           immediate: false
         }, function(token) {
